@@ -5,6 +5,7 @@ import { convertStringNumber } from "./convertStringNumber.js";
 const financeForm = document.querySelector('.finance__form');
 const financeAmount = document.querySelector('.finance__amount');
 const financeReport = document.querySelector('.finance__report');
+const reportClose = document.querySelector('.report__close');
 
 const report = document.querySelector('.report');
 
@@ -31,5 +32,8 @@ financeForm.addEventListener('submit', (e) => {
 });
 
 financeReport.addEventListener('click', () => {
-	report.classList.toggle('report__open');
+	report.classList.add('report__open');
+})  
+reportClose.addEventListener('click', () => {
+	report.classList.remove('report__open');
 })  
