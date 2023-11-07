@@ -1,0 +1,6 @@
+При нажатии Ctrl+Shift+L  и выделении переменной в консоль выводится не переменная, а вся строка 
+const financeAmount=document.querySelector('.finance__amount');
+
+Получается:
+console.log(const financeAmount = document.querySelector('.finance__amount'););
+Что я делаю не так?
